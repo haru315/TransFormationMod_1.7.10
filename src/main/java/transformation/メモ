@@ -1,0 +1,29 @@
+仕組み
+
+※見た目
+RenderLivingEvent.Pre
+//エンティティをレンダーイベントで
+
+Render rend = RenderManager.instance.getEntityClassRenderObject(エンティティ.getClass());
+//でエンティティからレンダーを取得して
+
+rend.doRender(エンティティ, 0, 0, 0, 1, 1);
+//でレンダーする
+
+
+//ファイル構成
+transformation.TransFormation
+//MOD登録ファイル
+
+transformation.packet
+//パケット関係ファイル
+
+transformation.Formation
+//エンティティの格納とNBT変換
+
+
+#実装予定
+・エンティティの動きを抑制する
+
+#改善場所
+・packetはファイル数を減らせる
